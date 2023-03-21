@@ -17,30 +17,32 @@
     <div class="file-upload-container">
         <!-- title -->
         <div class="file-upload-header">
-            <h2>Upload Files</h2>
+            <h3></h>Upload Files</h3>
         </div>
-        <!-- where to upload files -->
-        <div class="file-upload-form">
-            <form action="">
-                <label for="file-upload">
-                    <span class="material-symbols-rounded">
-                        upload
-                    </span>
-                    <br>
-                   Click to upload files
-                </label>
-                <input type="file" name="file-upload" id="file-upload" multiple>
-            </form>
+        <!-- test grid -->
+        <div class="testgrid">
+            <!-- where to upload files -->
+            <div class="file-upload-form">
+                <form action="">
+                    <label for="file-upload">
+                        <span class="material-symbols-rounded">
+                            upload
+                        </span>
+                       Click to upload files
+                    </label>
+                    <input type="file" name="file-upload" id="file-upload" multiple>
+                </form>
+                <!-- count of files uploaded -->
+                <div id="file-upload-count">
+                    No files selected
+                </div>
+            </div>
+            <!-- list of files uploaded -->
+            <div class="file-list-grid">
+                <ul id="file-upload-list"></ul>
+            </div>
         </div>
 
-        <!-- count of files uploaded -->
-        <div id="file-upload-count">
-            No files selected
-        </div>
-        <!-- list of files uploaded -->
-        <div>
-            <ul id="file-upload-list"></ul>
-        </div>
     </div>
 
 
