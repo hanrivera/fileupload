@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    form-sizing: border-form;
+    box-sizing: border-box;
 
     /* border: 1px solid gray; */
 }
@@ -20,6 +20,7 @@ body{
 }
 
 .file-upload-container{
+    width: 640px;
     padding: 16px;
     border: 2px solid #3ac;
     border-radius: 8px;
@@ -34,10 +35,6 @@ h2{
     text-align: center;
 }
 
-.file-upload-form{
-    margin: 16px auto;
-}
-
 .file-upload-form input[type=file]{
     display: none;
 }
@@ -46,18 +43,22 @@ h2{
     border: 2px dashed #3ac;
 
     display: inline-block;
-    min-height: fit-content;
-    width: 240px;
-    padding: 16px;
+    margin-bottom: 16px;
+    height: 64px;
+    padding: 8px;
+
     text-align: center;
     color: #3ac;
-    border-radius: 8px;
 }
 
 .file-upload-form label:hover{
     cursor: pointer;
     background-color: #3ac;
     color: #fff;
+}
+
+.file-upload-form label span{
+    vertical-align: sub;
 }
 
 #file-upload-count{
